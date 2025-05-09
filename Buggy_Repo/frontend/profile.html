@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Profiles</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">home</a>
+      <a href="items.html">items</a>
+      <a href="profile.html">about you</a>
+      <a href="analytics.html">analysis</a>
+      <a href="news.html">noos</a>
+      <a href="quiz.html">try a quiz!</a>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <!-- Please suggest some good music, I am tired of my playlist -->
+    <h1>🧑 User Profiles</h1>
+    
+    <div class="card">
+      <h2>Add New User</h2>
+      <form id="userForm">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" required />
+        </div>
+        <div class="form-group">
+          <label for="bio">Bio:</label>
+          <textarea id="bio" required></textarea>
+        </div>
+        <button type="submit">Add User</button>
+      </form>
+    </div>
+    
+    <div class="card">
+      <h2>User List</h2>
+      <div class="search-container">
+        <input type="text" id="search" placeholder="Search users..." />
+      </div>
+      <p id="userCounts">Total users: 0</p>
+      <ul id="userList"></ul>
+    </div>
+  </div>
+
+  <script src="scripts/profile.js"></script>
+</body>
+</html>

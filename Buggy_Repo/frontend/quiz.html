@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bash Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">home</a>
+      <a href="items.html">items</a>
+      <a href="profile.html">about you</a>
+      <a href="analytics.html">analysis</a>
+      <a href="news.html">noos</a>
+      <a href="quiz.html">try a quiz!</a>
+    </nav>
+  </header>
+  
+  <div class="container quiz-container">
+    <h1>🧠 Bash Quiz</h1>
+    <p id="scoreDisplay">Score: 0 | High Score: 0</p>
+    <div id="question" class="card">Loading question...</div>
+    <form id="answerForm" class="card"></form>
+    <p id="feedback"></p>
+    <button id="resetBtn" class="hidden">Reset Quiz</button>
+    
+    <div class="card">
+      <h2>Attempt History</h2>
+      <input type="text" id="search" placeholder="Search attempts..." />
+      <p id="attemptCount">Total attempts: 0</p>
+      <div id="attemptList" class="attempt-scrollable"></div>
+    </div>
+  </div>
+  
+  <script src="scripts/quiz.js"></script>
+</body>
+</html>
